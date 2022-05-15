@@ -1,0 +1,19 @@
+{
+  "name": "cardshark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "cd client && npm install && npm run build"
+  },
+  "engines": {
+    "node": "16.15.0"
+  },
+  "author": "ben",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
