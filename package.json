@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "cd client && npm install && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "dev": "nodemon server.js"
   },
   "engines": {
     "node": "16.15.0"
@@ -14,6 +15,16 @@
   "author": "ben",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.4",
+    "nodemon": "^2.0.16",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.3.0"
   }
 }
