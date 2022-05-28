@@ -103,11 +103,11 @@ class Lobby extends Component {
                 {!this.props.user &&
                     <p>Note: to join a game you must <Link to="/login">log in</Link></p>
                 }
-                <p className='title'>Games:</p>
                 {readyToJoin &&
                     <GameCreateForm disabled={!readyToJoin}
                         handleCreateGame={(g) => this.handleCreateGame(g)} />
                 }
+                <p className='title'>Games:</p>
                 <GameList games={games} joinEnabled={readyToJoin} user={this.props.user}
                     joinGame={(g) => this.handleJoinGame(g)} leaveGame={(g) => this.handleLeaveGame(g)} startGame={(g) => this.handleStartGame(g)}/>
             </div>

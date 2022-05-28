@@ -65,7 +65,7 @@ app.post('/api/creategame', (req, res) => {
         const userWithPWDeleted = delUserPW(req.user);
         newGame.host = userWithPWDeleted;
         newGame.users = [userWithPWDeleted];
-        const maxId = Math.max(...games.map(g => g.id));
+        const maxId = games.length === 0 ? 0 : Math.max(...games.map(g => g.id));
         newGame.id = maxId + 1;
 
         games.unshift(newGame);
