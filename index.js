@@ -45,9 +45,9 @@ app.get("/logout", (req, res) => {
 });
 
 var games = [
-        {title: 'g1', id: 1, type: 'hearts', host: {username: 'Joe'}, users: [{username: 'Sue'}]},
+        /*{title: 'g1', id: 1, type: 'hearts', host: {username: 'Joe'}, users: [{username: 'Sue'}]},
         {title: 'g2', id: 2, type: 'spades', host: {username: 'Bob'}, users: [{username: 'Mary'}]},
-        {title: 'g3', id: 3, type: 'euchre', host: {username: 'Jim'}, users: [{username: 'Ann'}]},
+        {title: 'g3', id: 3, type: 'euchre', host: {username: 'Jim'}, users: [{username: 'Ann'}]},*/
     ];
 
 //map of id -> {user: userObj, socket: socketObj, etc...}

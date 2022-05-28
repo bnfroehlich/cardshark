@@ -1,7 +1,7 @@
 const Mongoose = require("mongoose")
 const localDB = `mongodb://localhost:27017/role_auth`
 const connectDB = async () => {
-  await Mongoose.connect(localDB, {
+  await Mongoose.connect(process.env.MONGODB_URI || localDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

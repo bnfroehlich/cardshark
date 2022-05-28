@@ -91,10 +91,12 @@ exports.login = async (req, res, next) => {
             });
         }
     } catch (error) {
-        res.status(400).json({
+        console.log(err);
+        res.redirect("/login/fail");
+        /*res.status(400).json({
             message: "An error occurred",
             error: error.message,
-        })
+        })*/
     }
 }
 
