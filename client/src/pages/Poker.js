@@ -110,7 +110,7 @@ class Poker extends Component {
             const bhHighlightedUser = this.state.game.users.find(u => u.bestHandHighlighted);
             if (bhHighlightedUser) {
                 highlightedCards = bhHighlightedUser.bestHand;
-                highlightOutline = '5px solid red';//bhHighlightedUser.color;
+                highlightOutline = '5px solid #dc3545';//bhHighlightedUser.color;
             }
         }
 
